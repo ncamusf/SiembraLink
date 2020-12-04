@@ -13,7 +13,7 @@ Este programa está en fase de desarrollo por lo que requiere tener previamente 
 Para utilizar la aplicación requiere realizar los siguientes comandos:
 
 	git clone https://github.com/ncamusf/SiembraLink.git
-	cd siembralink
+	cd SiembraLink
 	expo start
 
 	abrir consola virtual
