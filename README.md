@@ -5,7 +5,9 @@
 SiembraLink es una aplicación para celular que pretende facilitar la búsqueda y oferta de trabajo, conectando fácilmente a los empleadores con personas que buscan empleo. Actualmente el enfoque principal de esta aplicación es para empleos del área de la agricultura, pero a largo plazo vemos la posibilidad de generalizar el tipo de trabajos que se pueda abarcar, transformándola en una aplicación  búsqueda de trabajos de todo tipo.
 
 El git en el que realizamos el proyecto es el siguiente:
+
 	https://github.com/ncamusf/SiembraLink.git
+
 Este programa está en fase de desarrollo por lo que requiere tener previamente instalado expo, git y una consola virtual.
 
 Para utilizar la aplicación requiere realizar los siguientes comandos:
