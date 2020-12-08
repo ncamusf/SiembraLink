@@ -51,11 +51,11 @@ const ProfileScreen = ({navigation}) => {
             <View style={[styles.infoBox, {
               borderRightColor: '#dddddd',
               borderRightWidth: 1
-            }]} onPress={() => {}}>
+            }]}>
               <Title>4.6</Title>
               <Caption>Valoracion</Caption>
             </View>
-            <View style={styles.infoBox} onPress={() => {}}>
+            <View style={styles.infoBox}>
               <Title>2</Title>
               <Caption>Trabajos</Caption>
             </View>
