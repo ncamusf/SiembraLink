@@ -5,8 +5,9 @@ import FinancialState from './FinancialState.js'
 import ProfileScreen from './Profile_Screen.js'
 import WorkSearch from './Works_Searcher.js'
 import MyJobsScreen from './Works_Screens.js'
+import EditProfileScreen from './EditProfile_Screen.js'
 import Icon from 'react-native-vector-icons/Ionicons'
-
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 const FinancialStack = createStackNavigator();
 const PerfilStack = createStackNavigator();
 const SearcherStack = createStackNavigator();
@@ -100,8 +101,24 @@ const PerfilScreenStack = ({navigation}) => (
     <PerfilStack.Screen name="Profile" component={ProfileScreen} options={{
           title:"Perfil",
           headerLeft: () => (
-            <Icon.Button name="ios-menu" size={25} backgroundColor="#9EC637" onPress={() => navigation.openDrawer()}></Icon.Button>
-          )
+            <Icon.Button
+             name="ios-menu"
+             size={25} 
+             backgroundColor="#9EC637" 
+             onPress={() => navigation.openDrawer()}>
+             </Icon.Button>
+          ),
+          headerRight: () => (
+            <MaterialCommunityIcons.Button
+             name="account-edit"
+             size={25} 
+             backgroundColor="#9EC637" 
+             onPress={() => navigation.navigate('EditProfile')}>
+             </MaterialCommunityIcons.Button>
+          ),          
+        }}/>
+    <PerfilStack.Screen name="EditProfile" component={EditProfileScreen} options={{
+          title:"Editar Perfil",  
         }}/>
     </PerfilStack.Navigator>
   );

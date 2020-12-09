@@ -17,6 +17,7 @@ import {
 } from '@react-navigation/drawer';
 
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import {nuevoPerfil} from './Data/PerfilData'
 
 const ProfileScreen = ({navigation}) => {
   return (
@@ -26,7 +27,7 @@ const ProfileScreen = ({navigation}) => {
           <View style={{flexDirection: 'row', marginTop: 15}}>
             <Avatar.Image 
               source={{
-                uri: 'https://cdn-pro.elsalvador.com/wp-content/uploads/2018/04/agricultura.jpg',
+                uri: nuevoPerfil.foto,
               }}
               size={120}
             />
@@ -34,7 +35,7 @@ const ProfileScreen = ({navigation}) => {
               <Title style={[styles.title, {
                 marginTop:15,
                 marginBottom: 5,
-              }]}>Antonio Ramirez</Title>
+              }]}> {nuevoPerfil.nombre_completo}</Title>
               <Caption style={styles.caption}>@Aramirez</Caption>
             </View>
           </View>
@@ -42,8 +43,8 @@ const ProfileScreen = ({navigation}) => {
 
         <View>
           <Title style={{marginLeft: 20}}>Sobre Mi</Title>
-          <Text style={{marginLeft: 20,marginBottom:10,marginRight: 20,textAlign: 'justify'}}>He trabajado por 5 años en diferentes fundos, principalmente tengo como preferencia la recoleccion de cerezas, aun asi me siento capacitado para trabajar en cualquier tipo de cultivo.
-            Siempre estoy dispuesto a aprender cosas nuevas, es mas, en estos momentos estoy ahorrando, ya que me gustaria estudiar ingenieria agronoma. Espero puedan considerarme para trabajar.
+          <Text style={{marginLeft: 20,marginBottom:10,marginRight: 20,textAlign: 'justify'}}>
+          {nuevoPerfil.descripcion}
           </Text>
         </View>
         
@@ -52,11 +53,11 @@ const ProfileScreen = ({navigation}) => {
               borderRightColor: '#dddddd',
               borderRightWidth: 1
             }]}>
-              <Title>4.6</Title>
+              <Title>{nuevoPerfil.valoracion}</Title>
               <Caption>Valoracion</Caption>
             </View>
             <View style={styles.infoBox}>
-              <Title>2</Title>
+          <Title>{nuevoPerfil.numeroTrabajos}</Title>
               <Caption>Trabajos</Caption>
             </View>
         </View>
@@ -65,22 +66,22 @@ const ProfileScreen = ({navigation}) => {
               borderRightColor: '#dddddd',
               borderRightWidth: 1
             }]} onPress={() => {}}>
-                <Title>$631.000</Title>
+                <Title>${nuevoPerfil.gananciaMensual}</Title>
                 <Caption>Ganancia Mensual</Caption>
               </View>
         </View>
         <View style={styles.userInfoSection2}>
           <View style={styles.row}>
             <Icon name="map-marker-radius" color="#777777" size={20}/>
-            <Text style={{color:"#777777", marginLeft: 20}}>Chiloe, Chile</Text>
+          <Text style={{color:"#777777", marginLeft: 20}}>{nuevoPerfil.ubicacion}</Text>
           </View>
           <View style={styles.row}>
             <Icon name="phone" color="#777777" size={20}/>
-            <Text style={{color:"#777777", marginLeft: 20}}>+56 988476036</Text>
+          <Text style={{color:"#777777", marginLeft: 20}}>{nuevoPerfil.numeroTelefonico}</Text>
           </View>
           <View style={styles.row}>
             <Icon name="email" color="#777777" size={20}/>
-            <Text style={{color:"#777777", marginLeft: 20}}>Aramirez@gmail.com</Text>
+          <Text style={{color:"#777777", marginLeft: 20}}>{nuevoPerfil.mail}</Text>
           </View>
         </View>
       </ScrollView>
