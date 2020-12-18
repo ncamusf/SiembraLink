@@ -37,14 +37,14 @@ const EditProfileScreen = ({navigation}) => {
     <View style={styles.container}>
       <BottomSheet
         ref={sheetRef}
-        snapPoints={[250, 250, 0]}
+        snapPoints={[0, 250, 250]}
         borderRadius={10}
         renderContent={renderContent}
         initialSnap={0}
       />
       <View  style={{margin: 20}}>
         <View style={{alignItems: 'center'}}>
-              <TouchableOpacity onPress={() => sheetRef.current.snapTo(0)}>
+              <TouchableOpacity onPress={() => sheetRef.current.snapTo(1)}>
                 <View
                   style={{
                     height: 100,
