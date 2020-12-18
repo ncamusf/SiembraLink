@@ -36,7 +36,7 @@ const ProfileScreen = ({navigation}) => {
                 marginTop:15,
                 marginBottom: 5,
               }]}> {nuevoPerfil.nombre_completo}</Title>
-              <Caption style={styles.caption}>@Aramirez</Caption>
+              <Caption style={styles.caption}>{nuevoPerfil.usuario}</Caption>
             </View>
           </View>
         </View>

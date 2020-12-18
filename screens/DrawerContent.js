@@ -18,6 +18,7 @@ import{
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 import firebase from '../src/utils/firebase';
 import 'firebase/auth';
+import {nuevoPerfil} from './Data/PerfilData'
 
 
 export function DrawerContent(props) {
@@ -40,22 +41,22 @@ export function DrawerContent(props) {
                         <View style={{flexDirection:'row',marginTop: 5,marginLeft:20}}>
                             <Avatar.Image
                                 source ={{
-                                    uri: 'https://cdn-pro.elsalvador.com/wp-content/uploads/2018/04/agricultura.jpg'
+                                    uri: nuevoPerfil.foto,
                                 }}
                                 size={80}
                             />
                             <View style={{marginLeft:15,flexDirection:'column'}}>
-                                <Title style={styles.title}>Antonio Ramirez</Title>
-                                <Caption style={styles.caption}>@Aramirez</Caption>
+                                <Title style={styles.title}>{nuevoPerfil.nombre_completo}</Title>
+                                <Caption style={styles.caption}>{nuevoPerfil.usuario}</Caption>
                             </View>
                         </View>
                         <View style={styles.row}>
                             <View style={styles.section}>
-                                <Paragraph style={[styles.paragraph, styles.caption]}>4.6</Paragraph>
+                                <Paragraph style={[styles.paragraph, styles.caption]}>{nuevoPerfil.valoracion}</Paragraph>
                                 <Caption style={styles.caption}>Valoracion</Caption>
                             </View>
                             <View style={styles.section}>
-                                <Paragraph style={[styles.paragraph, styles.caption]}>2</Paragraph>
+                                <Paragraph style={[styles.paragraph, styles.caption]}>{nuevoPerfil.numeroTrabajos}</Paragraph>
                                 <Caption style={styles.caption}>Trabajos</Caption>
                             </View>
                         </View>

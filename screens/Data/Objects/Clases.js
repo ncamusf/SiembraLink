@@ -4,7 +4,7 @@ class Usuarios{
         this.edad = edad;
         this.rut = rut;
         this.id = id; //string
-        this.valoracion = "No Valorizado";
+        this.valoracion = "N/A";
     }
     mostrar_valoracion()
     {
@@ -23,26 +23,30 @@ class Empleado extends Usuarios{
         id,
         valoracion,
         foto,
-        ubicacion,
+        ciudad,
+        pais,
         gananciaMensual,
         aptitudes_para_trabajos,
         disponibilidad,
         numeroTelefonico,
         mail,
         numeroTrabajos,
-        descripcion
+        descripcion,
+        usuario
     ){
         super(nombre,apellido,edad,rut,id,valoracion);
         this.foto = foto;
         this.numeroTelefonico = numeroTelefonico;
-        this.ubicacion = ubicacion; //string
+        this.ciudad = ciudad; //string
+        this.pais = pais; //string
         this.gananciaMensual = gananciaMensual; //float
         this.aptitudes_para_trabajos = aptitudes_para_trabajos; //string
         this.disponibilidad = disponibilidad;
         this.mail = mail; //string
         this.numeroTrabajos = numeroTrabajos;
         this.descripcion = descripcion;
-    }
+        this.usuario = usuario;
+      }
     //en este caso agregé el id_empleado (cumple la misma función que trabajo)
     postular_trabajo(id_trabajo, id_empleado) {
         return null;

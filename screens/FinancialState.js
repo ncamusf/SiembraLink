@@ -16,8 +16,6 @@ const lineAnoAnterior = {
   ],
 };
 
-
-
 const lineAnoActual = {
   labels: ['E', 'F', 'Mz', 'Ab', 'My', 'Jn', 'Jl', 'Ag', 'S', 'O', 'N', 'D'],
   datasets: [
