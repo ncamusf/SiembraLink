@@ -16,15 +16,20 @@ import{
 } from '@react-navigation/drawer';
 
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
-
+import firebase from '../src/utils/firebase';
+import 'firebase/auth';
 
 
 export function DrawerContent(props) {
     
-    const [isDarkTheme, setIsDarkTheme] = React.useState(false);
+    const [isDarkTheme, setIsDarkTheme] = React.useState(false)
+    
+    const logout = () => {
+        firebase.auth().signOut();
+      }
 
     const toggleTheme = () => {
-         setIsDarkTheme(!isDarkTheme);
+        setIsDarkTheme(!isDarkTheme);
     }
     
     return(
@@ -112,7 +117,7 @@ export function DrawerContent(props) {
                 />
             )}
             label = "Sign Out"
-            onPress={() => {}}
+            onPress={logout}
             />
     </Drawer.Section>
 </View>

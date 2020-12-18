@@ -21,10 +21,10 @@ import { DrawerContent} from './screens/DrawerContent.js';
 import RootStackScreen from './screens/RootStackScreen';
 
 //Firebase
-import firebase from'./src/utils/firebase';
+import firebase from './src/utils/firebase';
 import 'firebase/auth';
 
-import {Inicio} from './screens/IncialScreen';
+//import {navegacion_App} from './screens/IncialScreen';
 
 import CreateAccountScreen from './screens/CreateAccountScreen';
 
@@ -47,7 +47,9 @@ const App = () => {
   return(
 
     <NavigationContainer>
-    {user ? <Inicio/>: <RootStackScreen> </RootStackScreen>}
+    {user ? <Drawer.Navigator drawerContent={props => <DrawerContent {...props}/>}>
+        <Drawer.Screen name="PerfilDrawer" component={MainTabScreen}/>
+  </Drawer.Navigator>: <RootStackScreen> </RootStackScreen>}
     {/*<RootStackScreen> </RootStackScreen>*/}
       {/*<Drawer.Navigator drawerContent={props => <DrawerContent {...props}/>}>
         <Drawer.Screen name="PerfilDrawer" component={MainTabScreen}/>
@@ -55,21 +57,5 @@ const App = () => {
     </NavigationContainer>
   );
 };
-
-
-// ESTO HAY QUE BORRARLO CUANDO ESTEMOS SEGUROS
-{/*function Logout() {
-
-  return(
-    //EL VIEW Y EL TEXT SE PUEDEN SACAR, PERO ME DA MIEDO.
-    < style={styles.container} >
-      <Text style={styles.text_header}> ¡Felicidades, ya has creado tu cuenta de SiembraLink! </Text>
-      <CreateAccountScreen> </CreateAccountScreen>
-
-  )
-
-}*/}
-
-
 
 export default App;

@@ -73,7 +73,7 @@ const ProfileScreen = ({navigation}) => {
         <View style={styles.userInfoSection2}>
           <View style={styles.row}>
             <Icon name="map-marker-radius" color="#777777" size={20}/>
-          <Text style={{color:"#777777", marginLeft: 20}}>{nuevoPerfil.ubicacion}</Text>
+          <Text style={{color:"#777777", marginLeft: 20}}>{nuevoPerfil.ciudad}, {nuevoPerfil.pais}</Text>
           </View>
           <View style={styles.row}>
             <Icon name="phone" color="#777777" size={20}/>
