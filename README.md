@@ -24,14 +24,18 @@ Para utilizar la aplicación requiere realizar los siguientes comandos:
 ![Imgur](https://i.imgur.com/adeOzK6.png?2)![Imgur](https://i.imgur.com/DK7YFb2.png?2)![Imgur](https://i.imgur.com/WXXo5nB.png?2)
 
 
-<h2>Cursos utilizados:</h2>
+<h2>Documentación</h2>
+
 * https://www.youtube.com/watch?v=WnS7dcY5Hys
+
 * https://www.youtube.com/watch?v=0-S5a0eXPoc
+
 * https://www.youtube.com/c/itzpradip/videos
+
 * https://www.udemy.com/course/react-native-crea-aplicaciones-moviles-reales-ios-y-android/
 	
-Documentación:
 * https://reactnavigation.org/blog/2020/02/06/react-navigation-5.0/
+
 * https://reactnative.dev/docs/getting-started
 
 
