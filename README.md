@@ -81,7 +81,7 @@ Para utilizar la aplicación requiere realizar los siguientes comandos:
 * react-native-chart-kit
 
 
-<h2>Creadores</h2>
+<h2>Desarrolladores</h2>
 
 * Nicolás Camus
 * Bastián Gonzalez
