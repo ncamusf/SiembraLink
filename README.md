@@ -14,6 +14,7 @@ Para utilizar la aplicación requiere realizar los siguientes comandos:
 
 	git clone https://github.com/ncamusf/SiembraLink.git
 	cd SiembraLink
+	npm install expo
 	expo start
 
 	abrir consola virtual
