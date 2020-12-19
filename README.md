@@ -61,3 +61,6 @@ Se utilizaron los siguientes paquetes en el proyecto:
 * react-native-vector-icons/Ionicons
 * react-native-vector-icons/MaterialCommunityIcons
 * react-navigation/drawer
+
+
+<h2>Contribuidores</h2>
