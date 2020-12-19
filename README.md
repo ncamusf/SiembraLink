@@ -57,7 +57,7 @@ Para utilizar la aplicación requiere realizar los siguientes comandos:
 
 
 
-<h3> Paquetes utilizados </h3>
+<h2> Paquetes utilizados </h2>
 
 * firebase
 * React
