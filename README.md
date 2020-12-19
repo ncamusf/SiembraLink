@@ -60,7 +60,8 @@ La creación de la conexión de la aplicación por parte de la plataforma se rea
 
 * Con respecto a las librerías fue necesario instalar “Firebase”, “React”, “react-native”, “react-native-vector-icons” y “react-navigation” para que poder ejecutar el proyecto y tenga un correcto funcionamiento, traducido en los siguientes paquetes:
 
-<h3> Paquetes utilizados </h3>:
+<h3> Paquetes utilizados </h3>
+
 * react-navigation/material-bottom-tabs
 * react-navigation/stack
 * react-native-vector-icons/Ionicons
