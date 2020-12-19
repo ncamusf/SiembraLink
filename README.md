@@ -63,7 +63,7 @@ Se utilizaron los siguientes paquetes en el proyecto:
 * react-navigation/drawer
 
 
-<h2>Contribuidores</h2>
+<h2>Creadores</h2>
 
 * Nicolás Camus
 * Bastián Gonzalez
