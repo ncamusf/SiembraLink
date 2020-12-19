@@ -64,3 +64,9 @@ Se utilizaron los siguientes paquetes en el proyecto:
 
 
 <h2>Contribuidores</h2>
+
+* Nicolás Camus
+* Bastián Gonzalez
+* Vicente Llanos
+* Camilo Mansilla
+* Diego Villanueva
