@@ -20,7 +20,8 @@ Para utilizar la aplicación requiere realizar los siguientes comandos:
 	abrir consola virtual
 	presionar Run on Android device/emulator
 
-![Imgur](https://imgur.com/zFynphE.jpg)
+![Imgur](https://i.imgur.com/OfQUJp7.png?3)![Imgur](https://i.imgur.com/kTsZpSl.png?2)![Imgur](https://i.imgur.com/kMZZmtC.png?2)
+![Imgur](https://i.imgur.com/adeOzK6.png?2)![Imgur](https://i.imgur.com/DK7YFb2.png?2)![Imgur](https://i.imgur.com/WXXo5nB.png?2)
 
 
 <h2>Cursos utilizados:</h2>
