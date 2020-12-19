@@ -23,7 +23,7 @@ Para utilizar la aplicación requiere realizar los siguientes comandos:
 ![Imgur](https://imgur.com/zFynphE.jpg)
 
 
-Cursos utilizados:
+<h2>Cursos utilizados:</h2>
 * https://www.youtube.com/watch?v=WnS7dcY5Hys
 * https://www.youtube.com/watch?v=0-S5a0eXPoc
 * https://www.youtube.com/c/itzpradip/videos
@@ -34,7 +34,7 @@ Documentación:
 * https://reactnative.dev/docs/getting-started
 
 
-Archivos:
+<h2>Archivos</h2>
 
 * App.js: Es el main de nuestro programa, en donde mediante la llamada del drawer se muestra en pantalla todo el programa. 
 * DrawerContent.js: Contiene la pantalla que se muestra al deslizar el dedo de izquierda a derecha, esta muestra información del perfil y botones para desconectarse o viajar al perfil, configuraciones y soporte. Adicionalmente agregamos un switch de modo noche en caso de que agreguemos esta función, es probable que sea eliminado en versiones posteriores.
